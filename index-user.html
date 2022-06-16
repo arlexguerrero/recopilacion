@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compensar</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles-compensar.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+	<script src="https://kit.fontawesome.com/e85e081f24.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+			/////// Prevent closing from click inside dropdown
+			document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+				element.addEventListener('click', function (e) {
+					e.stopPropagation();
+				});
+			})
+		});
+		// DOMContentLoaded  end
+	</script>
+</head>
+
+<body>
+	<!--Header-->
+	<header>
+        <!--content logo-->
+        <div class="container-md content-logo-buttons">
+            <div class="row">
+                <div class="col-5 col-xs-7 col-sm-7 col-md-8  col-lg-9  ">
+                    <div class="content-logo-compensar">
+                        <img class="img-fluid" src="images/img-logo-tienda-compensar.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-7  col-xs-5 col-sm-5 col-md-4  col-lg-3  content-buttons-header">
+                    <div class="buttons-header">
+                        <button class="btn-outline-gray icon-button">
+							<i class="fa-solid fa-bell"></i>
+							<span class="icon-button__badage">2</span>
+                        </button>
+                        <button class="btn-outline-gray">
+                            <i class="fa-lg fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="btn-outline-gray">
+                            <i class="fa-lg fa-solid fa-location-dot"></i>
+                        </button>
+
+						<!--<a href="index-user.html">
+							<button class="btn-outline-gray">
+								<i class="fa-lg fa-solid fa-user"></i>
+							</button>
+						</a>-->
+						
+							<label for="cbToggleVisibility" class=" btn-outline-gray content-button__user active " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+								<span class="user__leter">J</span>
+								<img class="user__arrow"  src="images/icons/Arrow.png" alt="user arrow">
+								
+							</label>
+							<input type="checkbox" id="cbToggleVisibility">
+							<div class="target" >
+								<div class="">
+									<img class="img-fluid" src="images/banners/user-menu.jpg" alt="">
+								  </div>
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Navbar-->
+
+		<div class="content-nav">
+			<div class="container-nav">
+				<div class="nav-new">
+					<div class="wrapper">
+	
+						<input type="radio" name="slide" id="menu-btn">
+						<input type="radio" name="slide" id="cancel-btn">
+						<ul class="nav-links">
+							<label for="cancel-btn" class="btn-megamenu cancel-btn"><i class="fas fa-times"></i></label>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Embarazadas</a>
+								<input type="checkbox" id="showMega">
+								
+								<label for="showMega" class="mobile-item flecha">Embarazadas <img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								
+								
+								<div class="mega-box">
+									<div class="content">
+										<div class="column">
+											<div class="header-title">
+												Servicios
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Cursos
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Practicas
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<img src="images/banners/embarazadas.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Bebés</a>
+								<input type="checkbox" id="showMega2">
+								<label for="showMega2" class="mobile-item flecha">Bebés<img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								<div class="mega-box">
+									<div class="content">
+											<div class="column">
+												<div class="header-title">
+													Servicios
+												</div>
+												<ul class="mega-links">
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+												</ul>
+											</div>
+											<div class="column">
+												<div class="header-title">
+													Cursos
+												</div>
+												<ul class="mega-links">
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+												</ul>
+											</div>
+											<div class="column">
+												<div class="header-title">
+													Practicas
+												</div>
+												<ul class="mega-links">
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+													<li><a href="">
+															<p>Texto producto</p>
+														</a></li>
+												</ul>
+											</div>
+										<div class="column">
+											<img src="images/banners/bebes.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Niños</a>
+								<input type="checkbox" id="showMega3">
+								<label for="showMega3" class="mobile-item flecha">Niños <img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								<div class="mega-box">
+									<div class="content">
+										<div class="column">
+											<div class="header-title">
+												Servicios
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Cursos
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Practicas
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<img src="images/banners/ninos.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Adolescentes</a>
+								<input type="checkbox" id="showMega4">
+								<label for="showMega4" class="mobile-item flecha">Adolescentes<img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								<div class="mega-box">
+									<div class="content">
+										<div class="column">
+											<div class="header-title">
+												Servicios
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Cursos
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Practicas
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<img src="images/banners/adolescentes.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Adultos</a>
+								<input type="checkbox" id="showMega5">
+								<label for="showMega5" class="mobile-item flecha">Adultos <img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								<div class="mega-box">
+									<div class="content">
+										<div class="column">
+											<div class="header-title">
+												Servicios
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Cursos
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Practicas
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<img src="images/banners/adultos.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn-nav__desk">Adulto Mayor</a>
+								<input type="checkbox" id="showMega6">
+								<label for="showMega6" class="mobile-item flecha">Adulto Mayor<img src="images/icons/Arrow.png" class="arrow-menu"></label>
+								<div class="mega-box">
+									<div class="content">
+										<div class="column">
+											<div class="header-title">
+												Servicios
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Cursos
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<div class="header-title">
+												Practicas
+											</div>
+											<ul class="mega-links">
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+												<li><a href="">
+														<p>Texto producto</p>
+													</a></li>
+											</ul>
+										</div>
+										<div class="column">
+											<img src="images/banners/adulto-mayor.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="" class="desktop-item btn__promociones">Promociones</a>
+							   <input type="checkbox" id="showMega7">
+								<label for="showMega7" class="mobile-item btn__promociones">Promociones</label>
+							</li>
+	
+						</ul>
+						<label for="menu-btn" class="btn-megamenu menu-btn"><i class="fas fa-bars"></i></label>
+	
+					</div>
+	
+				</div>
+	
+	
+				<div class="content-search-bar-desktop">
+					<div class="input-group input-group-sm search-bar-nav-desktop">
+						<input type="text" name="" id="" placeholder="Busca tu producto o servicio aquí...">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+        
+    </header>
+	
+
+	<!--<nav class=" navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<div class="container cont-mobile">
+				<div class="content-all-navbar ">
+					<div class="content-all-megamenu">
+						<div>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fa-solid fa-bars"></i>
+							</button>
+
+						</div>
+						<div class="collapse navbar-collapse" id="main_nav">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown has-megamenu">
+									<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Embarazadas
+									</a>
+									<div class="dropdown-menu megamenu" role="menu">
+										<div class="row">
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-4 col-6 content-all-banner-nav">
+												<div class="col-megamenu content-banner-nav">
+													<img class="img-fluid" src="images/banners/img-banner-megamenu.png"
+														alt="" srcset="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item active"> <a class="nav-link" href="#">Bebes </a> </li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item"><a class="nav-link" href="#"> Niños </a></li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item dropdown has-megamenu">
+									<a class="nav-link dropdown-toggle" href="#"
+										data-bs-toggle="dropdown">Adolescentes</a>
+									<div class="dropdown-menu megamenu" role="menu">
+										<div class="row">
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-2 col-12 content-list-megamenu">
+												<div class="col-megamenu">
+													<ul class="list-unstyled">
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+														<li><a class="link-submenu" href="#">Custom Menu</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-4 col-6">
+												<div class="col-megamenu content-banner-nav">
+													<img class="img-fluid"
+														src="images/banners/img-banner-megamenu-2.png" alt="" srcset="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item"><a class="nav-link" href="#"> Adultos </a></li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item"><a class="nav-link" href="#"> Adulto mayor </a></li>
+								<li><span class="divider"></span></li>
+								<li class="nav-item last-item-nav"><a class="nav-link" href="#"> Promociones </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-search-bar-desktop">
+						<div class="input-group input-group-sm search-bar-nav-desktop">
+							<input type="text" name="" id="" placeholder="Busca tu producto o servicio aquí...">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</nav>-->
+
+	<!--content-->
+	<section class="content-slider">
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<picture class="image-banner-header">
+						<source media="(max-width: 600px)" srcset="images/banners/banner_mobile02.jpg">
+						<source media="(min-width: 800px)" srcset="images/banners/banner02.jpg">
+						<img class="img-fluid" src="images/banners/banner02.jpg" alt="">
+					</picture>
+					<div class="container-text-banner">
+						<span class="title-category">Actividad</span>
+						<h2 class="title-header">Encuentro de adulto mayor</h2>
+						<p class="text-header">Un evento muy especial de crecimiento y promoción del bienestar emocional
+							y mental.</p>
+						<p class="price-banner">
+							<span class="price-before">$50.300</span>
+							<span class="price-after">$2.300</span>
+						</p>
+						<div class="content-button-banner">
+							<button class="button-banner">
+								Conoce más
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item ">
+					<picture class="image-banner-header">
+						<source media="(max-width: 600px)" srcset="images/banners/banner_mobile01.jpg">
+						<source media="(min-width: 800px)" srcset="images/banners/banner01.jpg">
+						<img class="img-fluid" src="images/banners/banner01.jpg" alt="">
+					</picture>
+					<div class="container-text-banner">
+						<span class="title-category">Actividad</span>
+						<h2 class="title-header">Encuentro de adulto mayor</h2>
+						<p class="text-header">Un evento muy especial de crecimiento y promoción del bienestar emocional
+							y mental.</p>
+						<p class="price-banner">
+							<span class="price-before">$50.300</span>
+							<span class="price-after">$2.300</span>
+						</p>
+						<div class="content-button-banner">
+							<button class="button-banner">
+								Conoce más
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<picture class="image-banner-header">
+						<source media="(max-width: 600px)" srcset="images/banners/banner_mobile03.jpg">
+						<source media="(min-width: 800px)" srcset="images/banners/banner03.jpg">
+						<img class="img-fluid" src="images/banners/banner03.jpg" alt="">
+					</picture>
+					<div class="container-text-banner">
+						<span class="title-category">Membresía</span>
+						<h2 class="title-header">Plan de entrenamiento físico</h2>
+						<p class="text-header">Actívate y ponte en forma ingresando el cupón <strong
+								class="fw-bold">#ActívateTiendaCompensar</strong> y obten <br />el <span
+								class="bold-black fw-bold">30%</span> de descuento.</p>
+						<div class="content-button-banner">
+							<button class="button-banner">
+								Conoce más
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">prev</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+
+	<!--New place-->
+	<section class="container-md content-new-place">
+		<div class="row">
+			<div class="col-md-6 content-text-location-desktop">
+				<p class=" text-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu suscipit risus.
+					Aliquam tincidunt est eget justo efficitur scelerisque. Vestibulum quam nisl, tristique sed volutpat
+					nec, aliquam in risus. Nam id nulla sodales, sodales tortor eget, porta massa. Nulla erat turpis,
+					posuere sed scelerisque eu, interdum ut odio. Aenean at metus eget enim rhoncus auctor.</p>
+			</div>
+			<div class="col-8 content-text-location-mobile">
+				<h3 class="fw-bold fs-6 text-end text-muted">Nueva sede</h3>
+				<p class="fs-10 text-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eros justo,
+					conditum vel aliquam non, porta in nisi. In volutpat, purus juufdndt utip id elementum laoreet.</p>
+			</div>
+			<div class="col-4 col-md-6 content-image-location">
+				<picture>
+					<source  media="(max-width: 600px)" srcset="images/banners/banner-placeholder-sede-400.png">
+					<source media="(min-width: 601px)" srcset="images/banners/ban_centro_mayor.jpg">
+					<img class="img-fluid" src="images/banners/ban_centro_mayor.jpg" alt="">
+				</picture>
+			</div>
+		</div>
+	</section>
+
+	<!--Nove-->
+	<section class="container-md">
+		<div class="">
+			<div class="row">
+				<div class="col">
+					<!-- Slides - cards -->
+					<h2 class="heading-default-2">
+						Novedades
+					</h2>
+
+				</div>
+				<div class="col controls-desktop">
+					<span class="title-section d-flex justify-content-end">
+						<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+							<i class="fa-solid fa-angle-left"></i>
+							<span class="visually-hidden">Previous</span>
+						</button><span class="mx-1">&nbsp;</span>
+						<button class="btn btn-carrousel btn-sm next-btn" type="button">
+							<i class="fa-solid fa-angle-right"></i>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</span>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Slides - cards -->
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod01.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso preparándote durante el embarazo</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod02.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso preparándote durante el embarazo</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod03.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso preparándote durante el embarazo</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod04.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Práctica libre de patinaje</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod05.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de confección de chaquetas</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod06.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de ecobaile rumba kids</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col clearfix controls-mobile">
+			<span class="title-section d-flex justify-content-end">
+				<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+					<i class="fa-solid fa-angle-left"></i>
+					<span class="visually-hidden">Previous</span>
+				</button><span class="mx-1">&nbsp;</span>
+				<button class="btn btn-carrousel btn-sm next-btn" type="button">
+					<i class="fa-solid fa-angle-right"></i>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</span>
+		</div>
+		<div class="content-button-more">
+			<button type="button" class="btn btn-light">Ver todo</button>
+		</div>
+	</section>
+
+	<!--Banner-->
+	<section class="container-md content-banners-info">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-4 content-banners-site">
+				<picture>
+					<source media="(max-width: 600px)" srcset="images/banners/elemento_promocionalmobile01.jpg">
+					<source media="(min-width: 800px)" srcset="images/banners/elemento_promocional01.jpg">
+					<img class="img-fluid" src="images/banners/elemento_promocional01.jpg" alt="">
+				</picture>
+			</div>
+			<div class="col-12 col-sm-12 col-md-8 content-banners-site">
+				<picture>
+					<source media="(max-width: 600px)" srcset="images/banners/elemento_promocional__mobile02.jpg">
+					<source media="(min-width: 800px)" srcset="images/banners/elemento_promocional02.jpg">
+					<img class="img-fluid" src="images/banners/elemento_promocional02.jpg" alt="">
+				</picture>
+			</div>
+		</div>
+	</section>
+
+	<!--Close location-->
+	<section class="content-close-location">
+		<div class="container-md">
+			<div class="row">
+				<div class="col">
+					<h2 class="heading-default-2">
+						Cerca a tu ubicación
+					</h2>
+				</div>
+				<div class="col clearfix controls-desktop">
+					<span class="title-section d-flex justify-content-end">
+						<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+							<i class="fa-solid fa-angle-left"></i>
+							<span class="visually-hidden">Previous</span>
+						</button><span class="mx-1">&nbsp;</span>
+						<button class="btn btn-carrousel btn-sm next-btn" type="button">
+							<i class="fa-solid fa-angle-right"></i>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</span>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="swiper-container container-md">
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod05.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de fútbol</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod06.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de cocina repostería</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod07.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Cita médica deportólogo</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod08.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Escuela de baloncesto</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col clearfix controls-mobile container-md">
+			<span class="title-section d-flex justify-content-end">
+				<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+					<i class="fa-solid fa-angle-left"></i>
+					<span class="visually-hidden">Previous</span>
+				</button><span class="mx-1">&nbsp;</span>
+				<button class="btn btn-carrousel btn-sm next-btn" type="button">
+					<i class="fa-solid fa-angle-right"></i>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</span>
+		</div>
+		<div class="content-button-more" style="margin-bottom: 0px;">
+			<button type="button" class="btn btn-light">Ver todo</button>
+		</div>
+	</section>
+
+	<!--Banner-->
+	<section class="container-md content-banners-info">
+		<div class="row">
+			<div class="col-12 ">
+				<picture>
+					<source media="(max-width: 600px)" srcset="images/banners/cinta_promocionalmobile.jpg">
+					<source media="(min-width: 800px)" srcset="images/banners/cinta_promocional.jpg">
+					<img class="img-fluid" src="images/banners/cinta_promocional.jpg" alt="">
+				</picture>
+			</div>
+		</div>
+	</section>
+
+	<!--Sold-->
+	<section class="container-md">
+		<div class="">
+			<div class="row">
+				<div class="col">
+					<h2 class="heading-default-2">
+						Lo más vendido
+					</h2>
+				</div>
+				<div class="col clearfix controls-desktop">
+					<span class="title-section d-flex justify-content-end">
+						<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+							<i class="fa-solid fa-angle-left"></i>
+							<span class="visually-hidden">Previous</span>
+						</button><span class="mx-1">&nbsp;</span>
+						<button class="btn btn-carrousel btn-sm next-btn" type="button">
+							<i class="fa-solid fa-angle-right"></i>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</span>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod09.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de baile pasodoble</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod10.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de mindfulness</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod11.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Curso de activación física para adulto mayor</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="card-carrousel">
+							<figure class="image-card">
+								<img class="img-fluid" src="images/carrousel/img_prod12.jpg" alt="">
+							</figure>
+							<div class="body-card-carrousel">
+								<h3 class="name-item-card">Alquiler cancha de squash</h3>
+
+								<p class="fw-light title-price-card">Desde</p>
+								<p class="fw-bold text-price-card">$42.600*</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col clearfix controls-mobile">
+			<span class="title-section d-flex justify-content-end">
+				<button class="btn btn-carrousel btn-sm prev-btn" type="button">
+					<i class="fa-solid fa-angle-left"></i>
+					<span class="visually-hidden">Previous</span>
+				</button><span class="mx-1">&nbsp;</span>
+				<button class="btn btn-carrousel btn-sm next-btn" type="button">
+					<i class="fa-solid fa-angle-right"></i>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</span>
+		</div>
+		<div class="content-button-more">
+			<button type="button" class="btn btn-light">Ver todo</button>
+		</div>
+	</section>
+
+	<!--Banner-->
+	<section class="container-md content-banners-info">
+		<div class="row">
+			<div class="col-12 content-banners-site">
+				<picture>
+					<source media="(max-width: 600px)"
+						srcset="images/banners/bs-m-servicios-veraguas-junio-03-2022.jpg">
+					<source media="(min-width: 800px)"
+						srcset="images/banners/bs-d-servicios-veraguas-junio-03-2022.webp">
+					<img class="img-fluid"
+						src="images/banners/bs-d-servicios-veraguas-junio-03-2022.webp" alt="">
+				</picture>
+			</div>
+		</div>
+	</section>
+
+	<!--Options end-->
+	<section class="container-md content-buttons-profile">
+		<div class="row">
+			<div class="col col-12 col-sm-6 col-md-3 mb-4">
+				<div class="body-card-default card-gray">
+					<figure class="icons-card-gray">
+						<img class="img-fluid" src="images/icons/icon_01.png" alt="">
+					</figure>
+					<h5 class="fs-6 fw-bold">Iniciar sesión</h5>
+					<p class="fs-7">Descubre cuáles son los precios y promociones que aplican a tu categoría de
+						afiliación.
+					</p>
+					<div class="content-button-plus">
+						<a href="">
+							<i class="bi bi-plus-square-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12 col-sm-6 col-md-3 mb-4">
+				<div class="body-card-default card-gray">
+					<figure class="icons-card-gray">
+						<img class="img-fluid" src="images/icons/icon_02.png" alt="">
+					</figure>
+					<h5 class="fs-6 fw-bold">Reactivación de servicios</h5>
+					<p class="fs-7">Conoce aquí como retomar todos los servicios deportivos que aplazaste por la
+						pandemia.
+					</p>
+					<div class="content-button-plus">
+						<a href="">
+							<i class="bi bi-plus-square-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12 col-sm-6 col-md-3 mb-4">
+				<div class="body-card-default card-gray">
+					<figure class="icons-card-gray">
+						<img class="img-fluid" src="images/icons/icon_03.png" alt="">
+					</figure>
+					<h5 class="fs-6 fw-bold">Protocolo de bioseguridad</h5>
+					<p class="fs-7">Sigue estas medidas de prevención y autocuidado al ingresar a cualquiera de nuestras
+						sedes.</p>
+					<div class="content-button-plus">
+						<a href="">
+							<i class="bi bi-plus-square-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12 col-sm-6 col-md-3 mb-4">
+				<div class="body-card-default card-gray">
+					<figure class="icons-card-gray">
+						<img class="img-fluid" src="images/icons/icon_04.png" alt="">
+					</figure>
+					<h5 class="fs-6 fw-bold">Medios de pago</h5>
+					<p class="fs-7">Escoge la mejor opción para ti y realiza el pago de todas tus compras de forma
+						segura.
+					</p>
+					<div class="content-button-plus">
+						<a href="">
+							<i class="bi bi-plus-square-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Form end-->
+	<section class="container-md content-form-news-footer">
+		<div class="row">
+			<div class="col-12 col-md-10 col-lg-6 form-newsletter-footer">
+				<h2 class="heading-default-2 text-center">Boletín de novedades</h2>
+				<p class="text-center text-black-50">Suscríbete para recibir las últimas novedades y promociones</p>
+
+				<form action="">
+					<div class="content-button-form-newsletter">
+						<div class="input-group">
+							<input type="text" class="form-control input-newsletter-footer"
+								placeholder="Digita tu email" aria-label="Email" aria-describedby="basic-addon1">
+						</div>
+						<button type="submit" class="btn btn-primary button-newsletter-footer">Suscribir</button>
+					</div>
+					<div class="form-check check-newsletter-footer">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						<label class="form-check-label" for="flexCheckDefault">
+							Acepto, política de tratamiento de datos
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
+	<footer class="content-footer">
+		<div class="container-md">
+			<div class="row first-section-footer gap-auto">
+				<div class="col-12 col-sm-6 col-md-4 content-location-footer">
+					<h4 class="title-footer">Compensar caja de compensación Familiar</h4>
+					<p class="text-location-footer">Av. 68 # 49A-47, Bogotá DC, Colombia</p>
+					<p class="text-location-footer">Línea Nacional: 01 8000 96 70 70</p>
+					<p class="text-location-footer">Bogota: 57 601 307 7001</p>
+
+					<div class="content-icons-footer">
+						<div class="content-icon-social">
+							<i class="fa-brands fa-facebook-square fa-2xl"></i>
+						</div>
+						<div class="content-icon-social">
+							<i class="fa-brands fa-twitter-square fa-2xl"></i>
+						</div>
+						<div class="content-icon-social">
+							<i class="fa-brands fa-youtube fa-2xl"></i>
+						</div>
+						<div class="content-icon-social">
+							<i class="fa-brands fa-linkdin fa-2xl"></i>
+						</div>
+						<div class="content-icon-social">
+							<i class="fa-brands fa-instagram-square fa-2xl"></i>
+						</div>
+						<div class="content-icon-social">
+							<i class="fa-brands fa-spotify fa-2xl"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-2 content-list-footer">
+					<h4 class="title-footer">Tienda</h4>
+					<ul class="list-footer">
+						<li>
+							<a href="">
+								<p>¿Cómo comprar?</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Política de devoluciones</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Servicio doméstico y vigilancia</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-6 col-md-2 content-list-footer">
+					<h4 class="title-footer">Compensar</h4>
+					<ul class="list-footer">
+						<li>
+							<a href="">
+								<p>Tarjeta Compensar</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Nuestra organización</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Políticas de privacidad</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-6 col-md-2 content-list-footer">
+					<h4 class="title-footer">Servicio al cliente</h4>
+					<ul class="list-footer">
+						<li>
+							<a href="">
+								<p>Radicar PQRS</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Regalmento uso de escenarios</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>Reglamento uso de piscinas</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row second-section-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-md-2">
+							<a href="">
+								<img class="img-fluid" src="images/img-logo-supersalud.png" alt="">
+							</a>
+						</div>
+						<div class="col-4 col-md-2">
+							<a href="">
+								<img class="img-fluid" src="images/img-logo-supersubsidio.png" alt="">
+							</a>
+						</div>
+						<div class="col-4 col-md-2">
+							<a href="">
+								<img class="img-fluid" src="images/img-logo-certificaciones.png" alt="">
+							</a>
+						</div>
+						<div class="col-3 col-md-2">
+							<a href="">
+								<img class="img-fluid" src="images/img-logo-asocajas.png" alt="">
+							</a>
+						</div>
+						<div class="col-8 col-md-3 content-icons-browsers">
+							<i class="fa-brands fa-chrome fa-xl"></i>
+							<i class="fa-brands fa-firefox-browser fa-xl"></i>
+							<i class="fa-brands fa-edge fa-xl"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="to-top">
+				<i class="fas fa-chevron-up"></i>
+			</a>
+
+			<a href="#" class="chat-bot"></a>
+
+		</div>
+	</footer>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			autoplay: {
+				delay: 2000,
+			},
+			// init: false,
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.next-btn',
+				prevEl: '.prev-btn',
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+			}
+		});
+	</script>
+
+	<script>
+		const toTop = document.querySelector(".to-top");
+
+		window.addEventListener("scroll", () => {
+			if (window.pageYOffset > 100) {
+				toTop.classList.add("active");
+			} else {
+				toTop.classList.remove("active");
+			}
+		})
+	</script>
+	<script>
+	
+	</script>
+
+</body>
+
+</html>
